@@ -11,26 +11,30 @@
     <header>
       <nav class="flex flex-row justify-between h-28 p-2">
         <img src="../TD.png" alt="logo to do list" />
-        <ul class="flex flex-row h-10 w-80 justify-between">
+        <ul
+          class="flex flex-col md:w-80 md:flex-row md:h-10 md:justify-between justify-start gap-2"
+        >
           <li
-            class="hover:scale-110 px-2 py-2 bg-[#E07A5F] w-36 rounded-full flex justify-center items-center"
+            class="hover:scale-110 px-2 py-2 bg-[#E07A5F] h-8 md:w-36 w-24 rounded-full flex justify-center items-center"
           >
-            <a class="text-white text-xl pb-1" href="#">Sign up</a>
+            <a class="text-white md:text-xl pb-1" href="#">Sign up</a>
           </li>
           <li
-            class="hover:scale-110 px-2 py-2 bg-[#E07A5F] w-36 rounded-full flex justify-center items-center"
+            class="hover:scale-110 px-2 py-2 bg-[#E07A5F] h-8 md:w-36 w-24 rounded-full flex justify-center items-center"
           >
-            <a class="text-white text-xl pb-1" href="#">Log in</a>
+            <a class="text-white md:text-xl pb-1" href="#">Log in</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="text-center">
-      <h1 class="text-5xl text-white m-7">Créer ma To Do List</h1>
-      <section class="w-8/12 h-auto bg-[#E07A5F] rounded-lg m-auto pb-4">
+      <h1 class="md:text-5xl text-3xl text-white m-7">Créer ma To Do List</h1>
+      <section
+        class="md:w-8/12 h-auto bg-[#E07A5F] rounded-lg mx-2 md:m-auto pb-4"
+      >
         <input
           id="titleList"
-          class="placeholder-white h-14 m-4 w-2/4 rounded-md text-4xl bg-[#E07A5F] text-center text-white"
+          class="placeholder-white h-14 md:m-4 md:w-2/4 rounded-md text-2xl md:text-4xl bg-[#E07A5F] text-center text-white"
           type="text"
           name="titre"
           placeholder="Choisissez un titre"
