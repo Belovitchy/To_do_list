@@ -1,14 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Accueil | To-Do-List</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="style.css" rel="stylesheet" />
+
+
 </head>
 
-<body>
+<body class="bg-[#336b87]  font-[quicksand]">
+    <header>
+        <nav class="flex flex-row justify-between h-28 p-2">
+            <img src="TD.png" alt="Logo To Do">
+            <ul class="flex flex-row w-1/6 justify-between mr-36 gap-8">
+                <li>
+                    <a class="bg-[#E07A5F] hover:scale-110 rounded-full text-white text-xl h-1/3 w-40 flex justify-center items-center"
+                        href="#">Sign
+                        Up</a>
+                </li>
+                <li>
+                    <a class="bg-[#E07A5F] hover:scale-110 rounded-full text-white text-xl h-1/3 w-40 flex justify-center items-center"
+                        href="#">Log
+                        In</a>
+                </li>
+            </ul>
+        </nav>
+
+        <h1 class="flex justify-center text-white text-6xl">To Do List</h1>
+
+    </header>
+    <main class="container mx-auto">
+        <section class="flex justify-between">
+            <section class="text-white text-xl w-1/4 pl-16 mt-24 ">
+                <p class="mb-10">Créez vos listes en <br>quelques clics.</p>
+
+                <p class="mb-10">Consultez vos tâches <br> où que vous soyez.</p>
+
+                <p class="mb-10">Partagez vos objectifs <br> avec vos proches.</p>
+
+                <p class="mb-10">Votre vie organisée, <br> tout simplement.</p>
+
+                <p class="italic text-lg mb-10">"Ce n'est pas le plan qui est important,<br> c'est la
+                    planification." Dwight D. Eisenhower</p>
+            </section>
+
+            <section class="bg-[#E07A5F] rounded-lg w-1/4 p-6 mt-10 mb-20  hover:scale-110">
+                <h2 class="text-white text-3xl flex justify-center">Projet 1</h2>
+                <section>
+                    <span class="text-white mr-2">to do :</span>
+                    <section class="bg-white rounded px-2 py-1 w-full h-8"></section>
+                    <span class="text-white mr-2">to do :</span>
+                    <section class="bg-white rounded px-2 py-1 w-full h-8"></section>
+                    <span class="text-white mr-2">to do :</span>
+                    <section class="bg-white rounded px-2 py-1 w-full h-8"></section>
+                    <span class="text-white mr-2">to do :</span>
+                    <section class="bg-white rounded px-2 py-1 w-full h-8"></section>
+                    <span class="text-white mr-2">to do :</span>
+                    <section class="bg-white rounded px-2 py-1 w-full h-8"></section>
+                    <span class="text-white mr-2">to do :</span>
+                    <section class="bg-white rounded px-2 py-1 w-full h-8"></section>
+                    <span class="text-white mr-2">to do :</span>
+                    <section class="bg-white rounded px-2 py-1 w-full h-8"></section>
+                    <span class="text-white mr-2">to do :</span>
+                    <section class="bg-white rounded px-2 py-1 w-full h-8"></section>
+                </section>
+            </section>
+
+            <nav class="w-1/4 mt-40">
+                <ul class="flex flex-col gap-10 ml-0">
+                    <li>
+                        <a class="bg-[#E07A5F] hover:scale-110 rounded-full text-white text-2xl pb-2 p-2 w-1/2 flex justify-center"
+                            href="#">Créer</a>
+                    </li>
+                    <li>
+                        <a class="bg-[#E07A5F] hover:scale-110 rounded-full text-white text-2xl pb-2 p-2 w-1/2 flex justify-center"
+                            href="#">Consulter</a>
+                    </li>
+                    <li>
+                        <a class="bg-[#E07A5F] hover:scale-110 rounded-full text-white text-2xl pb-2 p-2 w-1/2 flex justify-center"
+                            href="#">A Propos</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+    <footer class="bg-[#E07A5F] text-white flex justify-center items-center flex-col mt-11">
+        <span class="text-white mr-2">Souscrivez à notre newsletter</span>
+        <input type="email" class="bg-white text-black rounded px-2 py-1 w-1/4 h-8 z-10" />
+        <p>&#169 Equipe Le Sud at Wild Code School 2025</p>
+    </footer>
+    <script src="index.js"></script>
 
 </body>
 
