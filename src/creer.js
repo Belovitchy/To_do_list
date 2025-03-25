@@ -1,5 +1,6 @@
-let allToDoList = []; //JSON.parse(localStorage.getItem("monTableau")) || [];
-let idCount = 0; //JSON.parse(localStorage.getItem("monCompteur")) || [];
+let allToDoList = JSON.parse(localStorage.getItem("monTableau")) || [];
+let idCount = JSON.parse(localStorage.getItem("monCompteur")) || [];
+console.log(allToDoList);
 //gestion ajouter une todo a la nouvelle list-----------
 const buttonAjoutToDo = document.querySelector("#addToDo");
 buttonAjoutToDo.addEventListener("click", () => {
@@ -26,7 +27,7 @@ buttonAjoutToDo.addEventListener("click", () => {
   });
   newToDo.appendChild(binButton);
   const bin = document.createElement("img");
-  bin.src = "./corbeille.svg";
+  bin.src = "./assets/corbeille.svg";
   binButton.appendChild(bin);
 });
 
@@ -34,26 +35,27 @@ buttonAjoutToDo.addEventListener("click", () => {
 
 const createButton = document.querySelector("#createButton");
 createButton.addEventListener("click", () => {
-  let thisToDoList = [];
+  let thisToDoList = { id: "", title: "", toDo: [] };
   idCount++;
-  thisToDoList.push(idCount);
+  thisToDoList.id = idCount;
   const parent = document.querySelector("#parentToDo");
 
   const titleList = document.querySelector("#titleList").value;
-  thisToDoList.push(titleList);
+  thisToDoList.title = titleList;
   const allToDo = parent.children;
   for (let toDo of allToDo) {
     const textToDo = toDo.querySelector('input[type="text"]').value;
     const checkToDo = toDo.querySelector('input[type="checkbox"]').checked;
-    const thisToDo = [checkToDo, textToDo];
-    thisToDoList.push(thisToDo);
+    const thisToDo = { checked: checkToDo, text: textToDo };
+    thisToDoList.toDo.push(thisToDo);
   }
   allToDoList.push(thisToDoList);
   console.log(titleList);
   localStorage.setItem("monTableau", JSON.stringify(allToDoList));
   localStorage.setItem("monCompteur", JSON.stringify(idCount));
-  console.log(allToDoList);
+
   //location.reload();
-  //console.log(allToDo);
+  console.log(allToDoList);
   // allToDo.forEach((element) => console.log(element));
+  window.location.href = "./consulterV2.html";
 });
