@@ -1,4 +1,4 @@
-let allToDoList = JSON.parse(localStorage.getItem("monTableau")) || [];
+const allToDoList = JSON.parse(localStorage.getItem("monTableau")) || [];
 let idCount = JSON.parse(localStorage.getItem("monCompteur")) || [];
 console.log(allToDoList);
 //gestion ajouter une todo a la nouvelle list-----------
@@ -35,7 +35,7 @@ buttonAjoutToDo.addEventListener("click", () => {
 
 const createButton = document.querySelector("#createButton");
 createButton.addEventListener("click", () => {
-  let thisToDoList = { id: "", title: "", toDo: [] };
+  const thisToDoList = { id: "", title: "", toDo: [] };
   idCount++;
   thisToDoList.id = idCount;
   const parent = document.querySelector("#parentToDo");
@@ -43,7 +43,7 @@ createButton.addEventListener("click", () => {
   const titleList = document.querySelector("#titleList").value;
   thisToDoList.title = titleList;
   const allToDo = parent.children;
-  for (let toDo of allToDo) {
+  for (const toDo of allToDo) {
     const textToDo = toDo.querySelector('input[type="text"]').value;
     const checkToDo = toDo.querySelector('input[type="checkbox"]').checked;
     const thisToDo = { checked: checkToDo, text: textToDo };
