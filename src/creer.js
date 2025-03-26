@@ -17,7 +17,7 @@ buttonAjoutToDo.addEventListener("click", () => {
   textToDo.className = "w-3/4 text-center text-3xl";
   newToDo.appendChild(textToDo);
   const binButton = document.createElement("button");
-  binButton.className = "h-10 w-10";
+  binButton.className = "h-10 w-10 hover:scale-110";
   binButton.addEventListener("click", () => {
     checkBox.remove();
     textToDo.remove();
