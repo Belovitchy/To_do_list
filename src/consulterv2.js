@@ -25,6 +25,7 @@ function displayList(id) {
     const newToDo = document.createElement("li");
     const checkBox = document.createElement("input");
     const textToDo = document.createElement("input");
+
     const binButton = document.createElement("button");
     const bin = document.createElement("img");
     bin.src = "./assets/corbeille.svg";
@@ -37,6 +38,9 @@ function displayList(id) {
     textToDo.value = toDo.text;
     checkBox.type = "checkbox";
     checkBox.checked = toDo.checked;
+    if (toDo.checked) {
+      textToDo.classList.add("line-through");
+    }
     newToDo.appendChild(checkBox);
     newToDo.appendChild(textToDo);
     newToDo.appendChild(binButton);
@@ -102,7 +106,7 @@ btnModif.addEventListener("click", () => {
   }
   allToDoList.push(listToModif);
   localStorage.setItem("monTableau", JSON.stringify(allToDoList));
-  // window.location.reload();
+  window.location.reload();
   //---------------------------------------------------------------------
   console.log(allToDoList);
 });
