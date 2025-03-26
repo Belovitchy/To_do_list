@@ -44,24 +44,31 @@
           placeholder="Choisissez un titre"
           id=""
         />
-        <ul id="parentToDo" class="w-3/4 mx-auto my-4 h-auto">
-          <!-- <li class="flex flex-row justify-between h-3/4 my-4">
-            <input class="h-10 w-10" type="checkbox" name="check" id="" />
+        <ul id="parentToDo" class="md:w-3/4 w-11/12 mx-auto my-4 h-auto">
+          <!-- <li
+            class="flex flex-row j md:justify-between h-8 md:h-3/4 my-4 gap-2"
+          >
             <input
-              class="w-3/4 text-center text-3xl"
+              class="h-8 w-8 md:h-10 md:w-10"
+              type="checkbox"
+              name="check"
+              id=""
+            />
+            <input
+              class="w-3/4 text-center text-2xl"
               type="text"
               name="tache"
               id=""
               placeholder="Saisir une to do"
             />
-            <button class="h-10 w-10">
+            <button class="h-8 w-8 md:h-10 md:w-10">
               <img src="./assets/corbeille.svg" alt="" />
             </button>
           </li> -->
         </ul>
         <button
           id="addToDo"
-          class="bg-white block ml-auto mr-4 p-2 w-20 rounded-md text-2xl hover:scale-110"
+          class="bg-white block ml-auto mr-4 p-2 w-16 md:w-20 rounded-md text-xl md:text-2xl hover:scale-110"
         >
           Ajout
         </button>
@@ -73,9 +80,13 @@
         Créer
       </button>
     </main>
-    <footer class="mt-auto bg-[#E07A5F] h-16 flex justify-start">
+    <footer
+      class="mt-auto bg-[#E07A5F] h-16 flex md:flex-row flex-col md:justify-start text-center"
+    >
       <section class="flex flex-col justify-center mx-4">
-        <h4 class="text-white">Souscrivez à notre newsletter</h4>
+        <h4 class="text-white text-sm md:text-xl">
+          Souscrivez à notre newsletter
+        </h4>
         <input
           class="text-center"
           type="email"
@@ -84,7 +95,9 @@
           id=""
         />
       </section>
-      <h4 class="m-auto text-white">© Equipe Le Sud Wild Code School 2025</h4>
+      <h4 class="m-auto text-white text-sm md:text-xl">
+        © Equipe Le Sud Wild Code School 2025
+      </h4>
     </footer>
     <script src="./creer.js"></script>
   </body>

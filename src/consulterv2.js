@@ -29,10 +29,11 @@ function displayList(id) {
     const binButton = document.createElement("button");
     const bin = document.createElement("img");
     bin.src = "./assets/corbeille.svg";
-    binButton.className = "h-10 w-10 hover:scale-110";
-    checkBox.className = "h-10 w-10";
-    textToDo.className = "w-3/4 text-center text-3xl";
-    newToDo.className = "flex flex-row justify-between h-3/4 my-6";
+    binButton.className = "h-8 w-8 md:h-10 md:w-10 hover:scale-110";
+    checkBox.className = "h-8 w-8 md:h-10 md:w-10";
+    textToDo.className = "w-3/4 text-center md:text-2xl text-xl";
+    newToDo.className =
+      "flex flex-row j md:justify-between h-8 md:h-3/4 my-4 gap-2";
     binButton.appendChild(bin);
     textToDo.type = "text";
     textToDo.value = toDo.text;
