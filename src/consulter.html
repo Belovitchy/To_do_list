@@ -1,28 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consulter</title>
+    <title>Consulter | To-Do-List</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="assets/consulter.css">
 </head>
 
 
-<body>
+<body class="bg-sky-700 min-h-screen flex flex-col">
 
     <header>
 
-        <nav>
+        <nav class="flex flex-row justify-between h-28 p-2 ">
             <img src="assets/TD.png" alt="Logo" />
 
-            <ul>
+            <ul class="flex flex-col sm:flex-row w-1/6 justify-between mr-36 gap-8">
 
-                <li><a href="#signup"><button>Sign up</button></a></li>
-                <li><a href="#login"><button>Log in</button></a></li>
-
-
+                <li><a class = " bg-[#E07A5F] sm:hover:scale-110 rounded-full text-white text-xl h-1/3 w-40 flex justify-center items-center"href="#signup"><button>Sign up</button></a></li>
+                <li><a class = "bg-[#E07A5F]  sm:hover:scale-110 rounded-full text-white text-xl h-1/3 w-40 flex justify-center items-center"href="#login"><button>Log in</button></a></li>
             </ul>
 
         </nav>
@@ -30,42 +28,37 @@
     </header>
 
 
-    <main>
-        <h1>TO DO LIST</h1>
-        <section class="container">
-            <section class="mestodolist">
-                <h2 id="titremestodolist"> Mes To Do List</h2>
-                <button>projet 1</button>
+    <main class="  sm:h-[80vh] p-8 flex-grow">
+        <h1 class ="text-center text-xl sm:text-3xl md:text-6xl justify-center text-white m-7 mb-16">TO DO LIST</h1>
+        <section class="flex flex-col sm:flex-row justify-center gap-24 pb-16 ">
+
+            <section class=" box-border bg-[#E07A5F] p-8 rounded-lg shadow-lg w-1/4 text-center">
+                <h2 class="text-white text-3xl text-center m-7"> Mes To Do List</h2>
+                <button class="box-border mt-4">projet 1</button>
             </section>
 
-            <section class="affichagetodolist">
-                <h2> Exemple du projet 1 </h2>
-
-                <div class="block">
-                    <input type="text" id="text">
-                    <button id="my-button">à faire</button>
-                </div>
-
-                <ul id="my-list">
-                    <li>
-
-                    </li>
+            <section class="bg-[#E07A5F] text-white p-6 rounded-lg shadow-lg w-1/4 text-center">
+                <h2 class="text-white text-3xl text-center m-7 text-center"> Exemple du projet 1 </h2>
+<input id="input-items" type="text" placeholder="ajoute une tache" class="text-black"/>
+                <ul id="my-list" class="max-h-20 overflow-y-auto mt-4">
                 </ul>
-
-                <button class="modifier">Modifier</button>
-                <button class="ajout">Ajout</button>
+            
+                <button id="bouton-ajouter">Ajouter</button>
             </section>
+            <button id="bouton-enregistrer" class="mt-4 bg-[#E07A5F] text-white p-2 rounded">
+                Enregistrer la To-Do List
+            </button>
         </section>
-
     </main>
 
-
-    <footer>
-        <p>Souscrivez à notre newsletter</p>
-        <p>&copy Equipe Le Sud at Wild Code School 2025</p>
-    </footer>
-
-
+    <footer class="mt-auto sm: bg-[#E07A5F] h-25 flex justify-start">
+        <section class="flex flex-col justify-center mx-4">
+            <h4 class="text-white">Souscrivez à notre newsletter</h4>
+            <input id ="newsletter" class="text-center" type="email" name="mail" placeholder="adresse mail" />
+          </section>
+          <h4 class="m-auto text-white">© Equipe Le Sud Wild Code School 2025</h4>
+        </footer>
+       
 
     <script src="consulter.js"></script>
 </body>
