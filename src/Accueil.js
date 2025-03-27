@@ -1,4 +1,4 @@
-const buttons = document.querySelectorAll("a");
+const buttons = document.querySelectorAll("a", "li");
 
 buttons.forEach(button => {
     button.addEventListener("mousedown", function () {
