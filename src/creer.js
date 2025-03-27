@@ -35,28 +35,40 @@ buttonAjoutToDo.addEventListener("click", () => {
 //gestion enregistrer la nouvelle list----------
 
 const createButton = document.querySelector("#createButton");
+
 createButton.addEventListener("click", () => {
-  const thisToDoList = { id: "", title: "", toDo: [] };
-  idCount++;
-  thisToDoList.id = idCount;
-  const parent = document.querySelector("#parentToDo");
-
   const titleList = document.querySelector("#titleList").value;
-  thisToDoList.title = titleList;
-  const allToDo = parent.children;
-  for (const toDo of allToDo) {
-    const textToDo = toDo.querySelector('input[type="text"]').value;
-    const checkToDo = toDo.querySelector('input[type="checkbox"]').checked;
-    const thisToDo = { checked: checkToDo, text: textToDo };
-    thisToDoList.toDo.push(thisToDo);
-  }
-  allToDoList.push(thisToDoList);
-  console.log(titleList);
-  localStorage.setItem("monTableau", JSON.stringify(allToDoList));
-  localStorage.setItem("monCompteur", JSON.stringify(idCount));
+  //verifier si il y a un titre avant d'enregistre
+  if (titleList === "") {
+    // const popup = document.querySelector("#popup");
+    // popup.classList.remove("invisible");
+    // const btnOk = document.querySelector("#ok");
+    // btnOk.addEventListener("click", () => {
+    //   popup.classList.add("invisible");
+    // });
+    alert("Choisissez un titre");
+  } else {
+    const thisToDoList = { id: "", title: "", toDo: [] };
+    idCount++;
+    thisToDoList.id = idCount;
+    const parent = document.querySelector("#parentToDo");
 
-  //location.reload();
-  console.log(allToDoList);
-  // allToDo.forEach((element) => console.log(element));
-  window.location.href = "./consulterV2.html";
+    thisToDoList.title = titleList;
+    const allToDo = parent.children;
+    for (const toDo of allToDo) {
+      const textToDo = toDo.querySelector('input[type="text"]').value;
+      const checkToDo = toDo.querySelector('input[type="checkbox"]').checked;
+      const thisToDo = { checked: checkToDo, text: textToDo };
+      thisToDoList.toDo.push(thisToDo);
+    }
+    allToDoList.push(thisToDoList);
+    console.log(titleList);
+    localStorage.setItem("monTableau", JSON.stringify(allToDoList));
+    localStorage.setItem("monCompteur", JSON.stringify(idCount));
+
+    //location.reload();
+    console.log(allToDoList);
+    // allToDo.forEach((element) => console.log(element));
+    window.location.href = "./consulterV2.html";
+  }
 });
