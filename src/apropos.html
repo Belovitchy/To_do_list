@@ -7,48 +7,62 @@
     <title>To do list</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
-<body class="bg-[#336B87] text-white">
 
+<body class="bg-[#336B87] flex flex-col min-h-screen text-white">
     <header>
-        <nav class="flex items-center space-x-45">
-            <img src="assets/TD.png" alt="Logo" class="w-25 p-2">
-            <section class=" flex flex-col p-2">
-                <button class="bg-[#E07A5F] rounded-full p-2 m-1 w-20"><a href="#Sign up">Sign up</a></li></button>
-                <button class="bg-[#E07A5F] rounded-full p-2 m-1"><a href="#Log in"> Log in</a></li></button>
-        </nav>
-        </section>
-        <h1 class="text-center p-2">A propos</h1>
+      <nav class="flex flex-row justify-between h-28 p-2">
+        <img src="assets/TD.png" alt="logo to do list" />
+        <ul class="flex flex-col md:w-80 md:flex-row md:h-10 md:justify-between justify-start gap-2">
+          <li
+            class="hover:scale-110 px-2 py-2 bg-[#E07A5F] h-8 md:w-36 w-24 rounded-full flex justify-center items-center">
+            <a class="shadow-xl md:text-xl pb-1" href="#">Sign up</a>
+          </li>
+          <li
+            class="hover:scale-110 px-2 py-2 bg-[#E07A5F] h-8 md:w-36 w-24 rounded-full flex justify-center items-center">
+            <a class="shadow-xl md:text-xl pb-1" href="#">Log in</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
-    <main>
-        <article class="bg-[#E07A5F] p-6 m-4 rounded-lg text-center">
-            <p> Nous sommes quatre développeurs en formation à la
+    <main class="md:m-40">
+        <h1 class="text-center font-bold mb-8 md:text-4xl md:mb-20">A propos</h1>
+        <section class="md:grid grid-cols-2 gap-2 md:my-30" >
+            <section class="bg-[#E07A5F] p-6 m-4 rounded-lg text-center shadow-xl md:mr-8 md:flex items-center justify-center">
+            <p class="text-center md:text-3xl md:leading-relaxed"> Nous sommes quatre développeurs en formation à la
                 Wild Code School et avons créé cette to-do list pour simplifier l’organisation au quotidien.
                 Intuitive, rapide et efficace, elle évolue grâce à vos retours. Essayez-la et dites-nous ce que vous en
-                pensez ! 🚀</p>
-        </article>
+                pensez ! 🚀
+            </p>
+        </section>
 
-        <h2 class="text-center p-2 m-4"> L’equipe Le Sud reste à votre disposition en cas de besoin </h2>
-        <article class="bg-[#E07A5F] p-6 m-4 rounded-lg">
-            <h3 class="text-center"> Nous contacter </h3>
+        <section class=" text-center">
+        <h2 class="text-center mb-4 m-2 font-bold md:text-2xl md:mb-20"> L’equipe Le Sud reste à votre disposition en cas de besoin </h2>
+        
+        
+        <ul class="bg-[#E07A5F] p-6 m-4 rounded-lg shadow-xl md:h-dvh md:ml-8 md:flex flex-col">
+            <h3 class="text-center md:text-3xl md:m-15 "> Nous contacter </h3>
 
-            <p class="bg-[#336B87] rounded-full p-1 m-2">Eric LESAFFRE :</p>
-            <p class="bg-[#336B87] rounded-full p-1 m-2">Dara SOM :</p>
-            <p class="bg-[#336B87] rounded-full p-1 m-2">Messica OUALANE :</p>
-            <p class="bg-[#336B87] rounded-full p-1 m-2">Maxime GIAMPAOLI :</p>
-        </article>
+            <li class="bg-[#336B87] rounded-full shadow-xl p-2 m-2 md:p-10 md:m-10 md:text-2xl">Eric LESAFFRE : eric@todolist.fr</li>
+            <li class="bg-[#336B87] rounded-full shadow-xl p-2 m-2 md:p-10 md:m-10 md:text-2xl">Dara SOM : dara@todolist.fr</li>
+            <li class="bg-[#336B87] rounded-full shadow-xl p-1 m-2 md:p-10 md:m-10 md:text-2xl">Messica OUALANE : messica@todolist.fr</li>
+            <li class="bg-[#336B87] rounded-full shadow-xl p-1 m-2 md:p-10 md:m-10 md:text-2xl">Maxime GIAMPAOLI : maxime@todolist.fr</li>
+        </ul>
+      </section>
+    </section>
+
     </main>
 
-    <footer class="bg-[#E07A5F] text-center p-3 ">
-        <p>Souscrivez à notre newletter</p>
-        <button class="bg-[#c0c0c0] rounded-full p-1 w-55"> Adresse mail </button>
-        <p>© Equipe Le Sud at Wild Code School 2025</p>
-    </footer>
-
-    <script src="script.js"></script>
+    <footer class="mt-auto bg-[#E07A5F] text-center md:flex justify-start md:text-base">
+        <section class="flex flex-col justify-center mx-4 md:m">
+          <h4 class="my-3">Souscrivez à notre newsletter</h4>
+          <input class="text-center bg-white text-black ring-2 md:mb-3" type="email" name="mail" placeholder="adresse mail" id="" />
+        </section>
+        <h4 class="m-auto my-3 text-white ">© Equipe Le Sud Wild Code School 2025</h4>
+      </footer>
 
 </body>
 
