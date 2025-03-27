@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consulter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/styleCreer.css" />
+  </head>
+
+  <body class="bg-[#336B87] flex flex-col min-h-screen">
+    <header>
+      <nav class="flex flex-row justify-between h-28 p-2">
+        <img src="assets/TD.png" alt="logo to do list" />
+        <section
+          class="flex flex-col md:w-80 md:flex-row md:h-10 md:justify-between justify-start gap-2"
+        >
+          <button
+            id="signUp"
+            class="hover:scale-110 px-2 py-2 bg-[#E07A5F] h-8 md:w-36 w-24 rounded-full flex justify-center items-center text-white md:text-xl pb-2"
+          >
+            Sign up
+          </button>
+
+          <button
+            id="logIn"
+            class="hover:scale-110 px-2 py-2 bg-[#E07A5F] h-8 md:w-36 w-24 rounded-full flex justify-center items-center text-white md:text-xl pb-2"
+          >
+            Log in
+          </button>
+        </section>
+      </nav>
+    </header>
+
+    <main class="text-center">
+      <h1 class="md:text-5xl text-3xl text-white m-7">TO DO LIST</h1>
+      <section
+        class="m-auto md:w-8/12 flex flex-col md:flex-row justify-center gap-4"
+      >
+        <section class="rounded-lg m-4 md:w-1/3 bg-[#E07A5F] pb-8">
+          <h2
+            class="h-14 md:m-4 md:w-auto rounded-md text-2xl md:text-4xl bg-[#E07A5F] text-center text-white"
+          >
+            Mes To Do List
+          </h2>
+          <ul id="parentTitle" class="flex flex-col">
+            <!-- <li class="m-4 bg-white rounded-full h-16 text-2xl">titre</li> -->
+          </ul>
+        </section>
+
+        <section class="rounded-lg md:w-2/3 bg-[#E07A5F] m-4">
+          <h2
+            id="titleList"
+            class="h-14 md:m-4 md:w-auto rounded-md text-2xl md:text-4xl bg-[#E07A5F] text-center text-white"
+          >
+            Titre
+          </h2>
+
+          <ul id="parentToDo" class="w-11/12 md:w-3/4 mx-auto my-4 h-auto"></ul>
+
+          <button
+            id="addToDo"
+            class="bg-white block ml-auto mr-4 p-2 w-20 rounded-md text-2xl hover:scale-110 invisible mb-4"
+          >
+            Ajout
+          </button>
+        </section>
+      </section>
+      <section class="flex flex-row justify-center">
+        <button
+          id="modifButton"
+          class="bg-[#E07A5F] m-4 p-2 w-auto rounded-md h-12 text-lg md:text-2xl hover:scale-110 text-white"
+        >
+          Modifier
+        </button>
+        <button
+          id="delet"
+          class="bg-[#E07A5F] m-4 p-2 w-auto rounded-md h-12 text-lg md:text-2xl hover:scale-110 text-white"
+        >
+          Supprimer
+        </button>
+      </section>
+    </main>
+
+    <footer
+      class="mt-auto bg-[#E07A5F] h-16 flex md:flex-row flex-col md:justify-start text-center"
+    >
+      <section class="flex flex-col justify-center mx-4">
+        <h4 class="text-white text-sm md:text-xl">
+          Souscrivez à notre newsletter
+        </h4>
+        <input
+          class="text-center"
+          type="email"
+          name="mail"
+          placeholder="adresse mail"
+          id=""
+        />
+      </section>
+      <h4 class="m-auto text-white text-sm md:text-xl">
+        © Equipe Le Sud Wild Code School 2025
+      </h4>
+    </footer>
+    <script src="./consulterv2.js"></script>
+  </body>
+</html>
