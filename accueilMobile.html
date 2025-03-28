@@ -1,120 +1,160 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accueil | To-Do-List</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="src/assets/Accueil.css" rel="stylesheet" />
-</head>
+  </head>
 
-<body class="bg-[#336b87]  font-[quicksand] flex flex-col min-h-screen">
+  <body class="bg-[#336b87] font-[quicksand] flex flex-col min-h-screen">
     <header>
-        <nav class="flex flex-row justify-between h-28 p-2">
-          <img href="./accueilMobile.html" src="src/assets/TD.png" alt="logo to do list" />
-          <ul class="flex flex-col md:w-80 md:flex-row md:h-10 md:justify-between justify-start gap-2">
-            <li
-              class="hover:scale-110 px-2 py-2 bg-[#E07A5F] h-8 md:w-36 w-24 rounded-full flex justify-center items-center">
-              <a class="text-white md:text-xl pb-1" href="#">Sign up</a>
-            </li>
-            <li
-              class="hover:scale-110 px-2 py-2 bg-[#E07A5F] h-8 md:w-36 w-24 rounded-full flex justify-center items-center">
-              <a class="text-white md:text-xl pb-1" href="#">Log in</a>
-            </li>
-          </ul>
-        </nav>
+      <nav class="flex flex-row justify-between h-28 p-2">
+        <img src="src/assets/TD.png" alt="logo to do list" />
+        <ul
+          class="flex flex-col md:w-80 md:flex-row md:h-10 md:justify-between justify-start gap-2"
+        >
+          <li
+            class="hover:scale-110 px-2 py-2 bg-[#E07A5F] h-8 md:w-36 w-24 rounded-full flex justify-center items-center"
+          >
+            <a class="text-white md:text-xl pb-1" href="#">Sign up</a>
+          </li>
+          <li
+            class="hover:scale-110 px-2 py-2 bg-[#E07A5F] h-8 md:w-36 w-24 rounded-full flex justify-center items-center"
+          >
+            <a class="text-white md:text-xl pb-1" href="#">Log in</a>
+          </li>
+        </ul>
+      </nav>
 
       <h1 class="text-white text-4xl text-center my-6">TO DO LIST</h1>
 
       <nav class="flex w-full mb-12 justify-center md:hidden">
-        <ul class="flex flex-row items-center justify-center gap-4 md:gap-10 md:flex-col">
-            <li>
-                <a class="bg-[#E07A5F] hover:scale-110 px-2 py-2 h-8 md:w-36 w-24 rounded-full flex justify-center items-center text-white"
-                    href="src/creer.html">Créer</a>
-            </li>
-            <li>
-                <a class="bg-[#E07A5F] hover:scale-110 px-2 py-2 h-8 md:w-36 w-24 rounded-full flex justify-center items-center text-white"
-                    href="src/consulterV2.html">Consulter</a>
-            </li>
-            <li>
-                <a class="bg-[#E07A5F] hover:scale-110 px-2 py-2 h-8 md:w-36 w-24 rounded-full flex justify-center items-center text-white"
-                            href="src/apropos.html">A Propos</a>
-            </li>
+        <ul
+          class="flex flex-row items-center justify-center gap-4 md:gap-10 md:flex-col"
+        >
+          <li>
+            <a
+              class="bg-[#E07A5F] hover:scale-110 px-2 py-2 h-8 md:w-36 w-24 rounded-full flex justify-center items-center text-white"
+              href="src/creer.html"
+              >Créer</a
+            >
+          </li>
+          <li>
+            <a
+              class="bg-[#E07A5F] hover:scale-110 px-2 py-2 h-8 md:w-36 w-24 rounded-full flex justify-center items-center text-white"
+              href="src/consulterV2.html"
+              >Consulter</a
+            >
+          </li>
+          <li>
+            <a
+              class="bg-[#E07A5F] hover:scale-110 px-2 py-2 h-8 md:w-36 w-24 rounded-full flex justify-center items-center text-white"
+              href="src/apropos.html"
+              >A Propos</a
+            >
+          </li>
         </ul>
-    </nav>
-      </header>
+      </nav>
+    </header>
 
-<div class="container md:ml-24 md:flex md:justify-center md:items-center md:flex-row-reverse md:gap-8 px-4 md:mt-20 md:mb-20">
-        <nav class="hidden md:flex md:items-center md:justify-end md:w-1/4">
-            <ul class="flex flex-col items-center justify-center gap-10 md:mr-16">
-                <li>
-                    <a class="bg-[#E07A5F] hover:scale-110 px-2 py-2 h-10 w-36 rounded-full flex justify-center items-center text-white text-xl"
-                        href="src/creer.html">Créer</a>
-                </li>
-                <li>
-                    <a class="bg-[#E07A5F] hover:scale-110 px-2 py-2 h-10 w-36 rounded-full flex justify-center items-center text-white text-xl"
-                        href="src/consulterV2.html">Consulter</a>
-                </li>
-                <li>
-                    <a class="bg-[#E07A5F] hover:scale-110 px-2 py-2 h-10 w-36 rounded-full flex justify-center items-center text-white text-xl"
-                        href="src/apropos.html">A Propos</a>
-                </li>
-            </ul>
-        </nav>
-        
-        <main class="flex flex-col md:flex-row md:w-3/4 justify-center items-center md:gap-12">
-            <section class="text-white text-xl text-center mb-8 md:w-1/2">
-                <p class="mb-4 md:mb-10">Créez vos listes en <br>quelques clics.</p>
-                <p class="mb-4 md:mb-10">Consultez vos tâches <br> où que vous soyez.</p>
-                <p class="mb-4 md:mb-10">Partagez vos objectifs <br> avec vos proches.</p>
-                <p class="mb-4 md:mb-10">Votre vie organisée, <br> tout simplement.</p>
-                <p class="md:italic text-white text-lg mb-10">"Ce n'est pas le plan qui est important, c'est la
-                    planification." Dwight D. Eisenhower</p>
-            </section>
-            
-            <section class="bg-[#E07A5F] rounded-lg hover:scale-110 p-6 mb-6 md:w-1/2 w-3/4">
-                <h2 class="text-white text-3xl flex justify-center">Projet 1</h2>
-                <div class="flex flex-col">
-                    <span class="text-white mr-2">to do :</span>
-                    <div class="bg-white rounded h-8"></div>
-                    <span class="text-white mr-2">to do :</span>
-                    <div class="bg-white rounded h-8"></div>
-                    <span class="text-white mr-2">to do :</span>
-                    <div class="bg-white rounded h-8"></div>
-                    <span class="text-white mr-2">to do :</span>
-                    <div class="bg-white rounded h-8"></div>
-                    <span class="text-white mr-2">to do :</span>
-                    <div class="bg-white rounded h-8"></div>
-                    <span class="text-white mr-2">to do :</span>
-                    <div class="bg-white rounded h-8"></div>
-                    <span class="text-white mr-2">to do :</span>
-                    <div class="bg-white rounded h-8"></div>
-                    <span class="text-white mr-2">to do :</span>
-                    <div class="bg-white rounded h-8"></div>
-                </div>
-            </section>
-        </main>
-    </div>
-        </main>
-        <footer
-        class="mt-auto bg-[#E07A5F] h-16 flex md:flex-row flex-col md:justify-start text-center"
+    <div
+      class="container md:ml-24 md:flex md:justify-center md:items-center md:flex-row-reverse md:gap-8 px-4 md:mt-20 md:mb-20"
+    >
+      <nav class="hidden md:flex md:items-center md:justify-end md:w-1/4">
+        <ul class="flex flex-col items-center justify-center gap-10 md:mr-16">
+          <li>
+            <a
+              class="bg-[#E07A5F] hover:scale-110 px-2 py-2 h-10 w-36 rounded-full flex justify-center items-center text-white text-xl"
+              href="src/creer.html"
+              >Créer</a
+            >
+          </li>
+          <li>
+            <a
+              class="bg-[#E07A5F] hover:scale-110 px-2 py-2 h-10 w-36 rounded-full flex justify-center items-center text-white text-xl"
+              href="src/consulterV2.html"
+              >Consulter</a
+            >
+          </li>
+          <li>
+            <a
+              class="bg-[#E07A5F] hover:scale-110 px-2 py-2 h-10 w-36 rounded-full flex justify-center items-center text-white text-xl"
+              href="src/apropos.html"
+              >A Propos</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <main
+        class="flex flex-col md:flex-row md:w-3/4 justify-center items-center md:gap-12"
       >
-        <section class="flex flex-col justify-center mx-4">
-          <h4 class="text-white text-sm md:text-xl">
-            Souscrivez à notre newsletter
-          </h4>
-          <input
-            class="text-center"
-            type="email"
-            name="mail"
-            placeholder="adresse mail"
-          />
+        <section class="text-white text-xl text-center mb-8 md:w-1/2">
+          <p class="mb-4 md:mb-10">Créez vos listes en <br />quelques clics.</p>
+          <p class="mb-4 md:mb-10">
+            Consultez vos tâches <br />
+            où que vous soyez.
+          </p>
+          <p class="mb-4 md:mb-10">
+            Partagez vos objectifs <br />
+            avec vos proches.
+          </p>
+          <p class="mb-4 md:mb-10">
+            Votre vie organisée, <br />
+            tout simplement.
+          </p>
+          <p class="md:italic text-white text-lg mb-10">
+            "Ce n'est pas le plan qui est important, c'est la planification."
+            Dwight D. Eisenhower
+          </p>
         </section>
-        <h4 class="m-auto text-white text-sm md:text-xl">
-          © Equipe Le Sud Wild Code School 2025
+
+        <section
+          class="bg-[#E07A5F] rounded-lg hover:scale-110 p-6 mb-6 md:w-1/2 w-3/4"
+        >
+          <h2 class="text-white text-3xl flex justify-center">Projet 1</h2>
+          <div class="flex flex-col">
+            <span class="text-white mr-2">to do :</span>
+            <div class="bg-white rounded h-8"></div>
+            <span class="text-white mr-2">to do :</span>
+            <div class="bg-white rounded h-8"></div>
+            <span class="text-white mr-2">to do :</span>
+            <div class="bg-white rounded h-8"></div>
+            <span class="text-white mr-2">to do :</span>
+            <div class="bg-white rounded h-8"></div>
+            <span class="text-white mr-2">to do :</span>
+            <div class="bg-white rounded h-8"></div>
+            <span class="text-white mr-2">to do :</span>
+            <div class="bg-white rounded h-8"></div>
+            <span class="text-white mr-2">to do :</span>
+            <div class="bg-white rounded h-8"></div>
+            <span class="text-white mr-2">to do :</span>
+            <div class="bg-white rounded h-8"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer
+      class="mt-auto bg-[#E07A5F] h-16 flex md:flex-row flex-col md:justify-start text-center"
+    >
+      <section class="flex flex-col justify-center mx-4">
+        <h4 class="text-white text-sm md:text-xl">
+          Souscrivez à notre newsletter
         </h4>
-      </footer>
+        <input
+          class="text-center"
+          type="email"
+          name="mail"
+          placeholder="adresse mail"
+        />
+      </section>
+      <h4 class="m-auto text-white text-sm md:text-xl">
+        © Equipe Le Sud Wild Code School 2025
+      </h4>
+    </footer>
     <script src="src/Accueil.js"></script>
-</body>
+  </body>
 </html>
