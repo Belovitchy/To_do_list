@@ -1,0 +1,50 @@
+[{
+    "id":1,
+    "name":"Mug Stras'Zik",
+    "price": 9.50,
+    "isAvailable":true,
+    "image":,
+    "description":"Mug marron en céramique"
+},
+
+{
+    "id":2,
+    "name":"T-shirt ‘Stras’Zik",
+    "price": 28.50,
+    "isAvailable":true,
+    "image":,
+    "description":"T-shirt crème avec logo"
+},
+{
+    "id":3,
+    "name":"Album collector",
+    "price": 15.50,
+    "isAvailable":true,
+    "image":,
+    "description":"Notre dernier album"
+},
+{
+    "id":4,
+    "name":"Tote-Bag",
+    "price": 6.50,
+    "isAvailable":true,
+    "image":,
+    "description":"Tote-bag en toile avec impression"
+},
+{
+    "id":5,
+    "name":"Dessous de verre",
+    "price": 10.50,
+    "isAvailable":true,
+    "image":,
+    "description":"Dessous de verre avec logo X6"
+},
+{
+    "id":6,
+    "name":"Sticker Collector",
+    "price": 3.50,
+    "isAvailable":true,
+    "image":,
+    "description":"Stickers collector Stras’Zik X8"
+},
+]
